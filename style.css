@@ -1,65 +1,96 @@
-img {
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #323227;
+    color: white;
+    font-weight: 600;
+ }
 
-    width: 300px;
-    height: 250px;
+.left, .center, .right {
+    flex: 1;
+    padding: 5px;
+ }
+
+.center {
+    text-align: center;
 }
 
-body { 
-display: flex;
-justify-content:space-evenly;
-align-items: center;
-flex-flow:column wrap;    
-flex-direction: column-reverse; 
- align-content:first baseline;
+.right {
+    text-align: right;
+}
+
  
-}
 
 h1 {
-    position: relative;
-    padding: 5px;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 20px;
-    background-color: aquamarine;
-    display: flex;
-justify-content: center;
-flex-flow: column-reverse  nowwrap;
-     width: 220px;
-     align-items: center;
     font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+ font-style: oblique;
+    text-align: center;
 }
 
-p {
-    width: 35%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+nav > ul {
+
+     display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+
+}
+  li {
+     padding: 10px;
+    display: flex;
+justify-content: space-between;    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
     color: black;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-decoration:underline;
 }
 
-.lightblue {
-order: -1;
+header {
+    text-align: center;
+     padding-bottom: 10px;
 }
 
 
-.flex {
-     flex-flow:row-reverse wrap-reverse;
-    padding: 50px;
-    width: 25%;
-     font-weight: 900;
-     background-color: black;
-     align-items: flex-start;
-    display: flex;
-    justify-content: center;
+
+.instagram {
+    color: rgb(203, 23, 23);
+    background-color:unset;
+      
+}
+.facebook {
+    color: rgb(18, 107, 201);
+    background-color:unset;
+   
+ }
+.twitter {
+    color: rgb(48, 176, 235);
+    background-color: unset;
+   }
+.home {
+    color:  rgb(84, 141, 167);
+    background-color: unset;
+   }
+.circle {
+    color: rgb(84, 141, 167);
+    background-color: unset;
+   }
+
+.envelope {
+     color: rgb(84, 141, 167);
+    background-color:unset;
+   }
   
- }
-
-
- .imgdiv {
-    position:relative;
-    width: 100%;
-    display: flex;
-    justify-content: right;
- }
