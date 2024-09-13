@@ -1,0 +1,29 @@
+body {
+    line-height: 2
+    ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.Myarticle {
+    color:rgba(255, 0, 0, 1);
+}
+.Myarticle1 {
+    color:rgb(217, 255, 0);
+}
+.Myarticle2 {
+    color:rgb(183, 0, 255);
+}
+
+footer {
+    background: hsla(0, 0%, 100%, 0.537);
+    color: hwb(0 0% 100%);
+}
+
+
+.text {
+    color: #000000;
+}
