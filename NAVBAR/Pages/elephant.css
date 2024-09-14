@@ -4,27 +4,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root {
-
---main-body-color: rgb(106, 156, 137);
---secondary-color:rgb(22, 66, 60);
---primary-color:rgb(196, 218, 210);
---light-color:rgb(233, 239, 236);
---black-color:rgb(24, 28, 20);
---main-font: Fantasy;
---font:Cursive;
---font-t: Monospace;
---font-size:1.2rem;
---icon-size:1.2rem;
-} 
 body {color: white;
     font-family: var(--font);
-    background: var(--main-body-color);
+    background:  linear-gradient(to bottom, #2f6690 0%, #3a7ca5 25%,#81c3d7 70%); 
     font-size: var(--font-size);
     text-align: justify;
  scroll-behavior: smooth;
- height:100vh;
-
+background-repeat: no-repeat;
+background-size: 100%;
 }
 
  
@@ -38,23 +25,30 @@ margin: 0 auto 1.2rem;
 
 /* Color for the section background */
 section {
-    background-color: var(--secondary-color);
-    border-radius: 0 0 1rem 1rem;
+    color: #0b1a35;
+    background:  linear-gradient(to left, #2f6690 0%, #3a7ca5 25%,#81c3d7 50%); 
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-repeat: repeat-y;
+}
+div {
+    display: flex;
 }
 
 /* Main paragraph style */
 p {
-    color: white;
+    color: #0b1a35;
     margin: 1rem auto 3rem ;
     text-indent: 1.1rem;
     text-align: center;
-padding: 15px;}
+padding: 15px;
+font-size: 1.5rem;
+}
 
 h1 { 
     margin: 2rem 0 1rem 0;
-    font-family: var(--main-font);
+    font-family: var(--font);
 padding: 20px;
-color: var(--secondary-color);
+color:#9ee493;
 font-weight: 900;
 font-size: 5rem;
 letter-spacing: 0.5rem;
@@ -76,92 +70,102 @@ dd {
 
 img {
     display: block;
-    width: 100%;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     margin: 2rem auto 0;
     border-radius: 1rem;
 }
 p a {
-    color: var(--main-body-color);
+    color: white;
     text-decoration: none;
 }
 
 p a:hover, a:focus {
-    color: var(--primary-color);
-    background-color: 697565;
+    color: #9ee493;
+    background-color: #6975650a;
     text-decoration: underline;
  }
-
- footer {
-    font-size: 2rem;
+ p a:visited {
+    color: black;
  }
+
+ footer p {
+    font-size: 2rem;
+    color: #0b1a35;
+ }
+/* style for image container */
 
  /* Media queries for phone */
 
  @media screen and  (max-width: 900px) {
 
-    body {color: rgb(0, 0, 0);
+    body {color: #111d13;
         font-family:monospace, 'Courier New', Courier;
-        background:  linear-gradient(to bottom, #5F6F65 0%, #5F6F65 25%,#C9DABF 50%); 
+        background:  linear-gradient(to bottom, #a1cca5 0%, #8fb996 25%,#709775 50%); 
         font-size: 1.2rem;
         font-weight:900;
         text-align: justify;
      scroll-behavior: smooth;
      height:auto;
     
-    }
-    
-     
-    /* Main contact section and header */
+    } 
+   /* Main contact section and header */
     header, section {
         max-width: 700px;
     text-align: center;
     margin: 0 auto 1.2rem;
- letter-spacing: 0.1rem;    }
+ letter-spacing: 0.1rem;    } 
     
     /* Color for the section background */
     section {
-        background:  linear-gradient(to bottom, #5F6F65 0%, #5F6F65 25%,#C9DABF 50%); 
-         
+        background:  linear-gradient(to bottom, #a1cca5 0%, #8fb996 25%,#709775 50%); 
      }
     
     /* Main paragraph style */
-    p {color:black;
-    }
+     
     
     h1 { text-align: center;
-color: white;
+color: #111D13;
  padding: 20px;
- font-family:'Courier New', Courier, monospace;
+ font-family: monospace, 'Courier New', sans-serif;
      font-weight: 900;
     font-size: 2.1rem;
      }
 
     h2 {
-        color: white;
+        color: #111D13;
          text-align:center;
         font-size: 1.2rem;
      }
     
     
     img {
-        display: block;
-        width: 300px;
-        height: 300px;
-        margin: 1rem auto 0;
-        border-radius: 1rem;
-    }
-    p a {
-        color: red;text-decoration: none;
-    }
-    
+        width: 150px; height: 150px;}
+p a{
+    color: white;
+    text-decoration: line-through;
+}
     p a:hover, a:focus {
-        color: black;
+        color: red;
         text-decoration: underline;
+     }
+     p a:active {
+        color: black;
      }
     
      footer {
-        font-size: 1rem;
+        font-size: 0.2rem;
      }
-    
+    dt {
+        font-size: 1.3rem;
+     }
+    dd{
+        font-size: 1.2rem;
+    }
+ }
+
+ @media screen and  (max-width: 480px) {
+    body {
+        font: 0.6rem;
+    };
  }
