@@ -91,6 +91,14 @@ p a:hover, a:focus {
     background-color: 697565;
     text-decoration: underline;
  }
+ audio {
+    width: 70%;
+    margin: 1rem auto;
+    padding: 10px;
+    border: 5px inset rgb(206, 183, 55);
+    background-color: black;
+   border-radius: 2rem;
+  }
 
  footer {
     font-size: 2rem;

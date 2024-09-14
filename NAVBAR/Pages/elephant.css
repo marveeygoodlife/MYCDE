@@ -93,6 +93,16 @@ p a:hover, a:focus {
     font-size: 2rem;
     color: #0b1a35;
  }
+
+
+ /* Audio style */
+ audio {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 10px;
+     background-color: inherit;
+   border-radius: 2rem;
+  }
 /* style for image container */
 
  /* Media queries for phone */
@@ -140,7 +150,7 @@ color: #111D13;
     
     
     img {
-        width: 150px; height: 150px;}
+        width: 200px; height: 200px;}
 p a{
     color: white;
     text-decoration: line-through;
