@@ -1,0 +1,190 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #b7e4c7;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+
+}
+.container {
+    display: flex;
+padding: 10px;
+justify-content: space-evenly;
+gap: 10px;
+  }
+
+ .item {
+  padding: 10px;
+  
+ }
+ h1 {
+    font-size: 5rem;
+text-transform: uppercase;
+font-weight: 900;
+font-family: cursive;
+    padding: 0.2rem 0 0.2rem 3rem;
+ }
+div {
+    border: 2px solid black;
+}
+.myp::first-letter{
+    color: red;
+    font-size: 5rem;
+    padding: 20px 0 20px 20px;
+    text-decoration: underline;
+}
+img {
+    width: 100%;
+    height: 250px;
+    opacity: 0.6;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 120px;
+    background:#b7e4c7 ;
+    color: rgb(247, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px dotted black;
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+/* set the display to none so it display as a hoover */
+aside  {
+     display: none;
+ }
+ /* A tooltip hover */
+ div:hover aside {
+display: block;
+ }
+ h2 {
+    text-align: center;
+    font-size: 2rem;
+
+ }
+  audio {
+    width: 80%;
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 10px;
+    border: 5px outset gold;
+    background-color: black;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+  }
+ dt {
+    font-weight: 900;
+    color: red;
+    text-align: left;
+    font-size: 1.9rem;
+    margin: 0.5rem auto 0.5rem;
+
+ }
+ dd {text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 0.5rem;
+    line-height: 1.6rem;
+ }
+ p {font-weight: 700;
+    font-size: 1.3rem;
+    padding: 10px;
+ }
+ p a {
+    color: red;
+ }
+ p a:hover {
+    color: #1b4332;
+    text-decoration: underline;
+    font-size: 1.5rem;
+ }
+
+ footer {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+ }
+
+
+  /* Media queries for phone */
+
+  @media screen and  (max-width: 900px) {
+
+    body {
+      scroll-behavior: smooth;
+    } 
+
+   /* Main contact section and header */
+   .container {
+    display: block;
+        
+   }
+    header, section {
+        max-width: 700px;
+    text-align: center;
+    margin: 0 auto 1.2rem;
+ letter-spacing: 0.1rem;    } 
+    /* Main paragraph style */
+    h1 { 
+  padding:1.5rem;
+     font-weight: 900;
+    font-size: 2.1rem;
+     }
+     aside  {
+        display: none;
+    }
+    /* A tooltip hover */
+    div:hover aside {
+   display: block;
+    }
+    img {
+        width: 150px; height: 150px;}
+
+div {
+    border: 1px solid black;
+    background:whitesmoke
+}
+p a{
+    color: black;
+    text-decoration: underline;
+}
+    p a:hover, a:focus {
+        color: red;
+        text-decoration: none;
+     }
+     p a:active {
+        color: black;
+     }
+    
+     footer {
+        font-size: 0.2rem;
+     }
+    dt {
+        font-size: 1.3rem;
+     }
+    dd{
+        font-size: 1.2rem;
+    }
+ }
+
+ @media screen and  (max-width: 480px) {
+    body {
+        font: 0.6rem;
+    };
+ }
